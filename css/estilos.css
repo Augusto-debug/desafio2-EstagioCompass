@@ -12,10 +12,6 @@
     border: none;
 }
 
-.main {
-    width: 100%;
-}
-
 .blue:hover {
     background-color: rgb(11, 11, 114);
     color: white;
@@ -53,17 +49,138 @@
         text-decoration: none;
         color: gray;;
     } 
-    .main-section {
+    .first-section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 100%;
+        position: relative;
     }
-    .main-section img {
+
+    .first-section h2 {
+        position: absolute;
+        top: 5px;
+        font-size: 2em;
+        color: black;
+    }
+    
+    .first-section h3 {
+        position: absolute;
+        top: 40px;
+        font-size: 2em;
+        color: black;
+        left: 10px;
+    }
+    .first-section img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        padding-top: 30px;
+    }
+
+    .second-section h2 {
+        position: absolute;
+        top: 5px;
+        left: 10%;
+        font-size: 2em;
+        color: black;
+    }
+
+    .second-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+    .third-section {
+        margin-top: 10px;
+    }
+
+    .prod {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 10px 0;
+        background-color: rgb(13, 13, 204);
+    }
+
+    .prod h3, .prod button {
+        position: absolute;
+    }
+
+    .prod h3 {
+        top: 10px;
+        left: 10px;
+        font-size: 2em;
+        color: white;
+    }
+
+    .prod button {
+        bottom: 10px;
+        right: 5px;
+        background-color: rgb(13, 13, 204);
+        color: white;
+        padding: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .prod button:hover{
+        background-color: rgb(11, 11, 114);
+    }
+    .prod img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .fourth-section h1 {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fourth-section {
+        position: relative;
+    }
+
+    .maisVendido1 h3  {
+        position: absolute;
+        bottom: 100px;
+        right: 3px;
+    }
+
+    .maisVendido1 button{
+        position: absolute;
+        bottom: 50px;
+        right: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: lightgray;
+        color: black;
+    }
+    .maisVendido1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .footer-header {
         display: flex;
         flex-direction: column;
