@@ -24,7 +24,7 @@
     border: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 120px) {
     .header-section {
        display: flex;
        justify-content: space-around;
@@ -120,6 +120,7 @@
         padding-left: 10px;
     }
     .footer div {
+        margin-top: 10px;
         display: flex;
     }
 
