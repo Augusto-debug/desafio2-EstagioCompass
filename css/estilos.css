@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Montserrat, sans-serif;  
 }
 
 .blue {
@@ -25,6 +28,7 @@
   justify-content: space-around;
   align-items: center;
   padding-top: 10px;
+ 
 }
 .header-section h2 {
   font-size: 2em;
@@ -59,11 +63,190 @@
   margin: 0 13px;
 }
 
-header {
+.productWeek {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; 
+  margin: auto;
+  width: 90%;
+  min-height: 400px;
+}
+
+.product1,
+.product2 {
   display: flex;
   flex-direction: column;
-
+  justify-content: flex-start;
+  align-items: start;
+  width: 48%; 
+  height: auto; 
+  margin: 0 5px;
 }
+.image-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  width: 75%;
+  height: 50%;
+  background-color: #2d8bc0;
+  opacity: 0.5;
+}
+.text {
+  position: relative;
+  bottom: 150px;
+  left: 50px;
+}
+.text h2 {
+  color: white;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.bestSellerProductsDesktop {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.bestSellerProductsDesktop article {
+  display: flex;
+  flex-direction: column;
+}
+
+.bestSellerProductsDesktop h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #737373;
+}
+
+.bestSellerProductsDesktop h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #252B42;
+}
+
+.bestSellerProductsDesktop p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+}
+
+.bestSellerProductsDesktopRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bestSellerProductsDesktopRow h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #252B42;
+}
+
+.bestSellerProductsDesktopRow h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #737373;
+}
+.bestSellerProductsDesktopRow h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #BDBDBD;
+}
+.bestSellerProductsDesktopRow span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #23856D;
+}
+
+.bestSellerProductsDesktopRow > div {
+  margin: 30px 10px;
+}
+
+.bestSellerProductsDesktop button {
+  background-color: white;
+  color: #23A6F0;
+  border: 1px solid #23A6F0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.bestSellerProductsDesktop button:hover  {
+  background-color: #23A6F0;
+  color: white ;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.text button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.containerFeaturedProductsDesktopImg {
+  display: flex;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.containerFeaturedProductsDesktopImg img {
+  margin: 0 10px;;
+}
+
+.featuredProductsDesktop {
+  display: flex;
+  justify-content: center;
+}
+
+.containerFeaturedProductsDesktopText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.containerFeaturedProductsDesktopText h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #23A6F0;
+  margin-bottom:10px;
+}
+.containerFeaturedProductsDesktopText h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #252B42;
+  margin-bottom:10px;
+}
+.containerFeaturedProductsDesktopText p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+  margin-bottom:10px;
+}
+
+
 
 .followus {
   display: flex;
@@ -115,9 +298,53 @@ header {
   font-size: 25px;
 }
 
-@media (max-width: 768px) and (min-width: 120px) {
+main {
+  margin-top: 50px;
+}
+.section  {
+  width: 90%; 
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 120px) and (max-width: 768px)   {
   .header-section-desktop {
     display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 
   .header-section {
@@ -193,11 +420,13 @@ header {
     width: 100%;
     position: relative;
   }
+
   .section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+ 
   .footer-header {
     display: flex;
     flex-direction: column;
