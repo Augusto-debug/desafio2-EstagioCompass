@@ -20,12 +20,115 @@
   border: none;
 }
 
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+.header-section h2 {
+  font-size: 2em;
+}
+.header-section-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.header-section-user p {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-section-desktop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #252b42;
+}
+
+.header-section-desktop p {
+  color: white;
+  margin: 0 13px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.followus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.followus img {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-nav ul {
+  display: flex;  
+  list-style: none; 
+}
+
+.desktop-nav ul li {
+  padding: 10px;
+}
+
+.desktop-nav p {
+  margin-right: 5px;
+}
+
+.img-section {
+  display: none;
+}
+
+.header-section-2 {
+  display: none;
+}
+
+.desktop-nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(26, 25, 25);
+  transition: 0.5s ease-in-out;
+}
+
+.desktop-nav ul li a {
+  text-decoration: none;
+  color: rgb(132, 132, 132);
+  font-size: 25px;
+}
+
 @media (max-width: 768px) and (min-width: 120px) {
+  .header-section-desktop {
+    display: none;
+  }
+
   .header-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 10px;
+  }
+
+  .img-section {
+    display: block;
   }
 
   .header-section h2 {
@@ -59,6 +162,24 @@
     color: rgb(88, 88, 88);
     font-size: 25px;
   }
+
+  .buttonBestSeller {
+    background-color: white;
+    color: #23a6f0;
+    border: 1px solid #23a6f0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttonBestSeller:hover {
+    background-color: #23a6f0;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
   .header-section-2 ul li a:hover {
     text-decoration: underline;
     color: rgb(26, 25, 25);
@@ -77,15 +198,13 @@
     height: 100%;
     object-fit: cover;
   }
-
- 
   .footer-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: lightgray;
+    background-color: #fafafa;
     padding: 40px;
     border-radius: 10px;
   }
@@ -158,6 +277,10 @@
     padding: 20px;
   }
 
+  .desktop-nav {
+    display: none;
+  }
+
   .copywright {
     display: flex;
     justify-content: center;
@@ -169,9 +292,3 @@
   }
 }
 
-.header-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 10px;
-}
