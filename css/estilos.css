@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: Montserrat, sans-serif;  
+  font-family: Montserrat, sans-serif;
 }
 .blue {
   background-color: rgb(13, 13, 204);
@@ -19,6 +19,9 @@
   padding: 10px;
   border-radius: 5px;
   border: none;
+}
+.pointer {
+  cursor: pointer;
 }
 .header-section {
   display: flex;
@@ -58,33 +61,45 @@
 .productWeek {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; 
+  align-items: stretch;
   margin: auto;
   width: 90%;
-  min-height: 400px;
 }
-.product1,
-.product2 {
+.product1{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
-  width: 48%; 
-  height: auto; 
+  width: 48%;
+  height: auto;
   margin: 0 5px;
+}
+.product2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 48%;
+  height: auto;
+  margin: 0 5px;  
+  overflow: hidden;
+  object-fit: cover;
 }
 .image-overlay {
   position: relative;
   display: inline-block;
 }
 .image-overlay img {
+  display: flex;
+  align-items: center;
+  justify-content: start;
   width: 100%;
-  height: auto;
+  height: 500px;
 }
 .image-overlay::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: 1%;
+  bottom: 0%;
   left: 0;
   width: 75%;
   height: 50%;
@@ -102,7 +117,7 @@
   margin: 20px 0;
 }
 .bestSellerProductsDesktop {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -121,7 +136,7 @@
 .bestSellerProductsDesktop h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #252B42;
+  color: #252b42;
 }
 .bestSellerProductsDesktop p {
   font-size: 14px;
@@ -135,7 +150,7 @@
 .bestSellerProductsDesktopRow h5 {
   font-size: 16px;
   font-weight: 700;
-  color: #252B42;
+  color: #252b42;
 }
 .bestSellerProductsDesktopRow h3 {
   font-size: 14px;
@@ -145,28 +160,29 @@
 .bestSellerProductsDesktopRow h4 {
   font-size: 16px;
   font-weight: 700;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 .bestSellerProductsDesktopRow span {
   font-size: 16px;
   font-weight: 700;
-  color: #23856D;
+  color: #23856d;
 }
 .bestSellerProductsDesktopRow > div {
   margin: 30px 10px;
 }
 .bestSellerProductsDesktop button {
   background-color: white;
-  color: #23A6F0;
-  border: 1px solid #23A6F0;
+  color: #23a6f0;
+  border: 1px solid #23a6f0;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+  margin-bottom: 50px;
 }
-.bestSellerProductsDesktop button:hover  {
-  background-color: #23A6F0;
-  color: white ;
+.bestSellerProductsDesktop button:hover {
+  background-color: #23a6f0;
+  color: white;
   border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
@@ -187,7 +203,7 @@
   width: 500px;
 }
 .containerFeaturedProductsDesktopImg img {
-  margin: 0 10px;;
+  margin: 0 10px;
 }
 .featuredProductsDesktop {
   display: flex;
@@ -201,7 +217,7 @@
   flex-wrap: wrap;
 }
 .featuredPosts1 {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
 }
 .featuredPosts {
@@ -214,12 +230,12 @@
 .featuredPosts h6 {
   font-weight: 700;
   font-size: 14px;
-  color: #23A6F0;
+  color: #23a6f0;
 }
 .featuredPosts h2 {
   font-weight: 700;
   font-size: 40px;
-  color: #252B42;
+  color: #252b42;
 }
 .featuredPostsContainer {
   display: flex;
@@ -240,13 +256,13 @@
 .featuredPostsContainerText h2 {
   font-size: 14px;
   font-weight: 700;
-  color: #23A6F0;
+  color: #23a6f0;
   padding: 10px;
 }
 .featuredPostsContainerText h5 {
   font-size: 16px;
   font-weight: 700;
-  color: #252B42;
+  color: #252b42;
   padding: 10px;
 }
 .featuredPostsContainerText p {
@@ -263,15 +279,15 @@
 }
 
 .featuredPostsContainerText div img {
- height: 11px;
+  height: 11px;
 }
 
 .featuredPostsContainerText button {
   padding: 10px;
   border-radius: 10px;
-  color: #23A6F0;
+  color: #23a6f0;
   background-color: white;
-  border: 1px solid #23A6F0;;
+  border: 1px solid #23a6f0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,24 +295,24 @@
 .featuredPostsContainerText h2 {
   font-size: 14px;
   font-weight: 700;
-  color: #23A6F0;
+  color: #23a6f0;
 }
 .featuredPostsContainerText button:hover {
   padding: 10px;
   border-radius: 10px;
   color: white;
-  background-color: #23A6F0;
-  border: 1px solid #23A6F0;;
+  background-color: #23a6f0;
+  border: 1px solid #23a6f0;
 }
 .featuredPostsContainer h2 {
   font-size: 14px;
   font-weight: 700;
-  color: #23A6F0;
+  color: #23a6f0;
 }
 .featuredPostsContainer h5 {
   font-size: 16px;
   font-weight: 700;
-  color: #252B42;
+  color: #252b42;
 }
 .featuredPostsContainer p {
   font-size: 14px;
@@ -306,25 +322,25 @@
 .containerFeaturedProductsDesktopText h5 {
   font-size: 16px;
   font-weight: 700;
-  color: #23A6F0;
-  margin-bottom:10px;
+  color: #23a6f0;
+  margin-bottom: 10px;
 }
 .containerFeaturedProductsDesktopText h2 {
   font-size: 40px;
   font-weight: 700;
-  color: #252B42;
-  margin-bottom:10px;
+  color: #252b42;
+  margin-bottom: 10px;
 }
 .containerFeaturedProductsDesktopText p {
   font-size: 14px;
   font-weight: 400;
   color: #737373;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 .bestServices {
   display: flex;
   flex-direction: column;
-  margin: 50px 0;
+  margin: 100px 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -365,7 +381,7 @@
 .bestServices2 div h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #252B42;
+  color: #252b42;
 }
 .bestServices2 div p {
   font-size: 14px;
@@ -390,8 +406,8 @@
   align-items: center;
 }
 .desktop-nav ul {
-  display: flex;  
-  list-style: none; 
+  display: flex;
+  list-style: none;
 }
 .desktop-nav ul li {
   padding: 10px;
@@ -418,8 +434,8 @@
 main {
   margin-top: 50px;
 }
-.section  {
-  width: 90%; 
+.section {
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -440,26 +456,35 @@ footer ul li a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 50px;
 }
 .footer-header img {
   margin: 0px 10px;
+  cursor: pointer;
 }
 .footer-section {
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-
-.copywright {
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FAFAFA;
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: rgb(26, 25, 25);
 }
-@media (min-width: 120px) and (max-width: 768px)   {
+.copywright {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+.footer div input {
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+@media (min-width: 120px) and (max-width: 768px) {
   .header-section-desktop {
     display: none;
   }
@@ -477,9 +502,11 @@ footer ul li a {
   }
   .img-section {
     display: block;
+    padding: 20px;
   }
   .header-section h2 {
     font-size: 2em;
+    cursor: pointer;
   }
   .header-section img {
     margin-left: 15px;
@@ -505,6 +532,111 @@ footer ul li a {
     text-decoration: none;
     color: rgb(88, 88, 88);
     font-size: 25px;
+  }
+  .productWeek {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+  }
+  .image-overlay {
+    position: relative;
+    display: inline-block;
+    height: 500px;
+  }
+  .image-overlay img {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bestServices2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .bestServices2 div {
+    margin: 20px 0;
+  }
+  .featuredPosts1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.featuredPosts1 div {
+  margin: 30px 0;
+}
+.featuredPostsContainerText div img  {
+  height: 10px;
+  width: 10px;
+}
+  .bestServices2 div:nth-of-type(2){
+    width: 50%;
+    height: 100%;
+  }
+   .image-overlay::after {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #2d8bc0;
+    opacity: 0.5;
+  }
+  .bestSellerProductsDesktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  .bestSellerProductsDesktopRow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .bestSellerProductsDesktopRow div {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  .featuredProductsDesktop {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .containerFeaturedProductsDesktopText {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 20px;
+  }
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .text  {
+    position: relative;
+    bottom: 150px;
+    left: 20px;
+  }
+  .text h2 {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .text button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .buttonBestSeller {
     background-color: white;
@@ -538,6 +670,7 @@ footer ul li a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 3px;
   }
   .footer-header {
     display: flex;
@@ -594,7 +727,6 @@ footer ul li a {
     margin-bottom: 20px;
   }
   .footer input {
-    background-color: lightgray;
     color: black;
     border: none;
     outline: none;
@@ -617,8 +749,7 @@ footer ul li a {
     align-items: center;
     width: 100%;
     padding: 30px;
-    background-color: lightgray;
+    background-color: #fafafa;
     font-size: 2em;
   }
 }
-
