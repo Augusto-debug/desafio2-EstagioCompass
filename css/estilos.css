@@ -411,14 +411,11 @@
   margin: 0 5px;
   cursor: pointer;
 }
-.carrouselImg {
-  height: 100%;
-  width: 100%;
-  width: 1000px;
-  height: 500px;
-  object-fit: contain;
-  border-radius: 5px;
+section:nth-of-type(1) img{
+  max-height: 500px;
+  border-radius: 10px;
 }
+
 .desktop-nav {
   display: flex;
   justify-content: center;
