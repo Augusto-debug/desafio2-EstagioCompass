@@ -6,7 +6,6 @@
   overflow-x: hidden;
   font-family: Montserrat, sans-serif;  
 }
-
 .blue {
   background-color: rgb(13, 13, 204);
   color: white;
@@ -14,7 +13,6 @@
   border-radius: 5px;
   border: none;
 }
-
 .blue:hover {
   background-color: rgb(11, 11, 114);
   color: white;
@@ -22,13 +20,11 @@
   border-radius: 5px;
   border: none;
 }
-
 .header-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 10px;
- 
 }
 .header-section h2 {
   font-size: 2em;
@@ -43,13 +39,11 @@
   margin-left: 10px;
   cursor: pointer;
 }
-
 .inline {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .header-section-desktop {
   display: flex;
   justify-content: space-around;
@@ -57,12 +51,10 @@
   padding: 10px;
   background-color: #252b42;
 }
-
 .header-section-desktop p {
   color: white;
   margin: 0 13px;
 }
-
 .productWeek {
   display: flex;
   justify-content: space-between;
@@ -71,7 +63,6 @@
   width: 90%;
   min-height: 400px;
 }
-
 .product1,
 .product2 {
   display: flex;
@@ -86,12 +77,10 @@
   position: relative;
   display: inline-block;
 }
-
 .image-overlay img {
   width: 100%;
   height: auto;
 }
-
 .image-overlay::after {
   content: '';
   position: absolute;
@@ -112,7 +101,6 @@
   font-size: 2em;
   margin: 20px 0;
 }
-
 .bestSellerProductsDesktop {
   display:flex;
   flex-wrap: wrap;
@@ -121,41 +109,34 @@
   flex-direction: column;
   margin: auto;
 }
-
 .bestSellerProductsDesktop article {
   display: flex;
   flex-direction: column;
 }
-
 .bestSellerProductsDesktop h4 {
   font-size: 20px;
   font-weight: 400;
   color: #737373;
 }
-
 .bestSellerProductsDesktop h3 {
   font-size: 24px;
   font-weight: 700;
   color: #252B42;
 }
-
 .bestSellerProductsDesktop p {
   font-size: 14px;
   font-weight: 400;
   color: #737373;
 }
-
 .bestSellerProductsDesktopRow {
   display: flex;
   flex-wrap: wrap;
 }
-
 .bestSellerProductsDesktopRow h5 {
   font-size: 16px;
   font-weight: 700;
   color: #252B42;
 }
-
 .bestSellerProductsDesktopRow h3 {
   font-size: 14px;
   font-weight: 700;
@@ -171,11 +152,9 @@
   font-weight: 700;
   color: #23856D;
 }
-
 .bestSellerProductsDesktopRow > div {
   margin: 30px 10px;
 }
-
 .bestSellerProductsDesktop button {
   background-color: white;
   color: #23A6F0;
@@ -194,7 +173,6 @@
   cursor: pointer;
   font-size: 14px;
 }
-
 .text button {
   background-color: transparent;
   color: white;
@@ -203,22 +181,18 @@
   border-radius: 5px;
   cursor: pointer;
 }
-
 .containerFeaturedProductsDesktopImg {
   display: flex;
   margin-top: 20px;
   width: 500px;
 }
-
 .containerFeaturedProductsDesktopImg img {
   margin: 0 10px;;
 }
-
 .featuredProductsDesktop {
   display: flex;
   justify-content: center;
 }
-
 .containerFeaturedProductsDesktopText {
   display: flex;
   flex-direction: column;
@@ -226,7 +200,109 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+.featuredPosts1 {
+  margin-top: 20px;
+  display: flex;
+}
+.featuredPosts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.featuredPosts h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #23A6F0;
+}
+.featuredPosts h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #252B42;
+}
+.featuredPostsContainer {
+  display: flex;
+  align-items: center;
+}
+.featuredPostsContainer > img {
+  width: 100%;
+  height: 100%;
+}
+.featuredPostsContainerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  padding: 20px;
+}
+.featuredPostsContainerText h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #23A6F0;
+  padding: 10px;
+}
+.featuredPostsContainerText h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #252B42;
+  padding: 10px;
+}
+.featuredPostsContainerText p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+  padding: 10px;
+}
+.featuredPostsContainerText div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
 
+.featuredPostsContainerText div img {
+ height: 11px;
+}
+
+.featuredPostsContainerText button {
+  padding: 10px;
+  border-radius: 10px;
+  color: #23A6F0;
+  background-color: white;
+  border: 1px solid #23A6F0;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featuredPostsContainerText h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #23A6F0;
+}
+.featuredPostsContainerText button:hover {
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #23A6F0;
+  border: 1px solid #23A6F0;;
+}
+.featuredPostsContainer h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #23A6F0;
+}
+.featuredPostsContainer h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #252B42;
+}
+.featuredPostsContainer p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+}
 .containerFeaturedProductsDesktopText h5 {
   font-size: 16px;
   font-weight: 700;
@@ -245,59 +321,100 @@
   color: #737373;
   margin-bottom:10px;
 }
-
-
-
+.bestServices {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.bestServices1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.bestServices1 h4 {
+  color: #737373;
+  font-size: 20px;
+  font-weight: 400;
+}
+.bestServices1 h3 {
+  color: #737373;
+  font-size: 24px;
+  font-weight: 700;
+}
+.bestServices1 p {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bestServices2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bestServices2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0px 20px;
+}
+.bestServices2 div h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #252B42;
+}
+.bestServices2 div p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+}
+.bestServices2 h3 {
+  margin: 5px 0;
+}
 .followus {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .followus img {
   margin: 0 5px;
   cursor: pointer;
 }
-
 .desktop-nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .desktop-nav ul {
   display: flex;  
   list-style: none; 
 }
-
 .desktop-nav ul li {
   padding: 10px;
 }
-
 .desktop-nav p {
   margin-right: 5px;
 }
-
 .img-section {
   display: none;
 }
-
 .header-section-2 {
   display: none;
 }
-
 .desktop-nav ul li a:hover {
   text-decoration: underline;
   color: rgb(26, 25, 25);
   transition: 0.5s ease-in-out;
 }
-
 .desktop-nav ul li a {
   text-decoration: none;
   color: rgb(132, 132, 132);
   font-size: 25px;
 }
-
 main {
   margin-top: 50px;
 }
@@ -312,66 +429,66 @@ main {
   display: none;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 footer ul {
   list-style: none;
 }
-
 footer ul li a {
   text-decoration: none;
   color: gray;
 }
-
 .footer-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  background-color: #FAFAFA;
+  padding: 50px;
+}
+.footer-header img {
+  margin: 0px 10px;
+}
+.footer-section {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
+.copywright {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
 @media (min-width: 120px) and (max-width: 768px)   {
   .header-section-desktop {
     display: none;
   }
-
   .desktop {
     display: none;
   }
-
   .mobile {
     display: block;
   }
-
   .header-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 10px;
   }
-
   .img-section {
     display: block;
   }
-
   .header-section h2 {
     font-size: 2em;
   }
-
   .header-section img {
     margin-left: 15px;
     cursor: pointer;
   }
-
   .header-section img:hover {
     transform: scale(1.3);
     transition: 0.5s ease-in-out;
   }
-
   .header-section-2 {
     display: flex;
     align-items: center;
@@ -389,7 +506,6 @@ footer ul li a {
     color: rgb(88, 88, 88);
     font-size: 25px;
   }
-
   .buttonBestSeller {
     background-color: white;
     color: #23a6f0;
@@ -398,7 +514,6 @@ footer ul li a {
     border-radius: 5px;
     cursor: pointer;
   }
-
   .buttonBestSeller:hover {
     background-color: #23a6f0;
     color: white;
@@ -406,7 +521,6 @@ footer ul li a {
     border-radius: 5px;
     cursor: pointer;
   }
-
   .header-section-2 ul li a:hover {
     text-decoration: underline;
     color: rgb(26, 25, 25);
@@ -420,13 +534,11 @@ footer ul li a {
     width: 100%;
     position: relative;
   }
-
   .section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
- 
   .footer-header {
     display: flex;
     flex-direction: column;
@@ -437,15 +549,12 @@ footer ul li a {
     padding: 40px;
     border-radius: 10px;
   }
-
   .footer-header h2 {
     font-size: 2em;
   }
-
   .footer-header div img {
     margin: 20px 10px;
   }
-
   .footer-section {
     display: flex;
     flex-direction: column;
@@ -453,7 +562,6 @@ footer ul li a {
     align-items: center;
     margin-top: 20px;
   }
-
   .footer-section ul {
     list-style: none;
     display: flex;
@@ -462,23 +570,19 @@ footer ul li a {
     align-items: center;
     padding: 10px 0;
   }
-
   .footer-section ul li {
     padding: 5px 0;
   }
-
   .footer-section ul li a {
     text-decoration: none;
     color: gray;
     font-size: 25px;
   }
-
   .footer-section ul li a:hover {
     text-decoration: underline;
     color: rgb(26, 25, 25);
     transition: 0.5s ease-in-out;
   }
-
   .footer-section h2 {
     font-size: 2em;
   }
@@ -501,15 +605,12 @@ footer ul li a {
     margin-top: 10px;
     display: flex;
   }
-
   .footer div input {
     padding: 20px;
   }
-
   .desktop-nav {
     display: none;
   }
-
   .copywright {
     display: flex;
     justify-content: center;
