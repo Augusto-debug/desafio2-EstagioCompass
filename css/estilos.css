@@ -13,6 +13,11 @@
   border-radius: 5px;
   border: none;
 }
+.input-footer {
+  padding: 7px;
+  outline: none;
+  border: none;
+}
 .blue:hover {
   background-color: rgb(11, 11, 114);
   color: white;
@@ -518,6 +523,7 @@ footer ul li a {
     display: block;
     padding: 20px;
   }
+
   .header-section h2 {
     font-size: 2em;
     cursor: pointer;
@@ -549,11 +555,11 @@ footer ul li a {
   }
   .productWeek {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     width: 90%;
+    padding: 20px;
   }
   .image-overlay {
     position: relative;
