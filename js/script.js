@@ -1,16 +1,20 @@
 const setaDireita = document.querySelector(".seta-direita");
 const setaEsquerda = document.querySelector(".seta-esquerda");
+const button = document.querySelector(".btn-footer");
+let imagemAtual = document.querySelectorAll(".carrouselImg");
+const input = document.querySelector(".input-footer");
+const fototerForm = document.querySelector(".footer-form");
+const headerMobileHeight2 = document.querySelector(".header-section-2");
+headerMobileHeight2.classList.add("header-section-2");
+const burger = document.querySelector(".burger-menu");
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let controlBurger = false;
 const imagens = [
   "img/imagensCarrousel/newCollectionDesktop.png",
   "img/imagensCarrousel/1.png",
   "img/imagensCarrousel/2.png",
   "img/imagensCarrousel/3.png",
 ];
-const button = document.querySelector(".btn-footer");
-let imagemAtual = document.querySelectorAll(".carrouselImg");
-const input = document.querySelector(".input-footer");
-const fototerForm = document.querySelector(".footer-form");
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 imagemAtual.forEach((img) => {
   setaDireita.addEventListener("click", () => {
     for (let i = 0; i < imagens.length; i++) {
@@ -51,7 +55,6 @@ setInterval(() => {
     }
   });
 }, 5000);
-
 button.addEventListener("click", (e) => {
   e.preventDefault();
   if (input.value === "" || input.value === " ") {
@@ -63,4 +66,16 @@ button.addEventListener("click", (e) => {
   }
   input.value = "";
   input.focus();
+});
+if (headerMobileHeight2) {
+  headerMobileHeight2.style.display ="none";
+}
+burger.addEventListener("click", () => {
+  if (controlBurger === false) {
+    headerMobileHeight2.style.display = "flex";
+    controlBurger = true;
+  } else {
+    headerMobileHeight2.style.display = "none";
+    controlBurger = false;
+  }
 });
