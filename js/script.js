@@ -5,7 +5,6 @@ let imagemAtual = document.querySelectorAll(".carrouselImg");
 const input = document.querySelector(".input-footer");
 const fototerForm = document.querySelector(".footer-form");
 const headerMobileHeight2 = document.querySelector(".header-section-2");
-headerMobileHeight2.classList.add("header-section-2");
 const burger = document.querySelector(".burger-menu");
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 let controlBurger = false;
